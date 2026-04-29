@@ -7,12 +7,14 @@ import { FaGithub } from "react-icons/fa";
 
 import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
 
+const asset = (path) => `${import.meta.env.BASE_URL}${path}`;
+
 const projects = [
   {
     title: "getUpdated a news feed web",
     description:
       "Builded a news feed website that shows real time news data based on user defind categories.",
-    image: "/public/getUpdated.png",
+    image: asset("getUpdated.png"),
     tags: ["JavaScript", "django"],
     link: "#",
     FaGithub: "https://github.com/TheCodexZ",
@@ -20,7 +22,7 @@ const projects = [
   {
     title: "Real Time Chat app",
     description: "Created a Real Time chat app where users can communicate live",
-    image: "/public/gossify 2.png",
+    image: asset("gossify 2.png"),
     tags: ["ReactJs", "TailwindCSS"],
     link: "#",
     FaGithub: "https://github.com/TheCodexZ",

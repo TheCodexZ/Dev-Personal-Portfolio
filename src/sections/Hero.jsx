@@ -3,6 +3,8 @@ import { ArrowRight, ChevronDown, Download} from "lucide-react";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
 
+const asset = (path) => `${import.meta.env.BASE_URL}${path}`;
+
 const skills = [
   "React",
   "Next.js",
@@ -24,7 +26,7 @@ export const Hero = () => {
         {/* Bg */}
         <div className="absolute inset-0">
             <img 
-                src="/hero-bg.jpg" 
+                src={asset("hero-bg.jpg")} 
                 alt="" 
                 className="w-full 
                 object-cover 
@@ -94,7 +96,7 @@ export const Hero = () => {
                         </Button>
                         </a>
 
-                        <a href="/public/resume.pdf" >
+                        <a href={asset("resume.pdf")} download="Digvijay-Basunde-Resume.pdf">
                             <AnimatedBorderButton>
                                 <Download className="w-5 h-5"/>
                                 Download CV
@@ -140,7 +142,7 @@ export const Hero = () => {
                             {/* Profile Image */}
                             <div className="relative w-full h-full rounded-full overflow-hidden p-[30px] bg-[var(--color-background)]">
                                 <img
-                                src="/r-profile.png"
+                                src={asset("r-profile.png")}
                                 alt=""
                                 className="w-full h-full object-cover rounded-full scale-145 "
                                 />
