@@ -6,15 +6,15 @@ import { ArrowUpRight} from "lucide-react";
 import { FaGithub } from "react-icons/fa";
 
 import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
-
-const asset = (path) => `${import.meta.env.BASE_URL}${path}`;
+import getUpdatedImage from "@/assets/getUpdated.png";
+import gossifyImage from "@/assets/gossify-2.png";
 
 const projects = [
   {
     title: "getUpdated a news feed web",
     description:
       "Builded a news feed website that shows real time news data based on user defind categories.",
-    image: asset("getUpdated.png"),
+    image: getUpdatedImage,
     tags: ["JavaScript", "django"],
     link: "#",
     FaGithub: "https://github.com/TheCodexZ",
@@ -22,7 +22,7 @@ const projects = [
   {
     title: "Real Time Chat app",
     description: "Created a Real Time chat app where users can communicate live",
-    image: asset("gossify 2.png"),
+    image: gossifyImage,
     tags: ["ReactJs", "TailwindCSS"],
     link: "#",
     FaGithub: "https://github.com/TheCodexZ",
